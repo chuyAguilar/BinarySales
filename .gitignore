@@ -1,0 +1,32 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+
+# env files
+.env*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# vercel
+.vercel
+
+# documentos internos del negocio (no publicar en el repo)
+Brief-Web-para-ClaudeCode.md
+Costos-Precios-y-Definicion.md
+Definicion-Marca-Web-Chatbot.md
+Plan-Negocio-Tula.md

@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* Tokens de marca (Brief, sección 2) */
+  --color-navy: #0b1f3a;
+  --color-accent: #2563eb;
+  --color-cta: #f59e0b;
+  --color-muted: #64748b;
+  --color-cloud: #f1f5f9;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Deja espacio para la navbar sticky al navegar por anclas */
+  scroll-padding-top: 5.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-navy);
+  -webkit-font-smoothing: antialiased;
+}
