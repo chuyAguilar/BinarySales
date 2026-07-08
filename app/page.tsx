@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Problema from "@/components/Problema";
 import Servicios from "@/components/Servicios";
+import TiposChatbot from "@/components/TiposChatbot";
 import ComoFunciona from "@/components/ComoFunciona";
 import Impresion3D from "@/components/Impresion3D";
 import PorQue from "@/components/PorQue";
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <Problema />
         <Servicios />
+        <TiposChatbot />
         <ComoFunciona />
         <Impresion3D />
         <PorQue />

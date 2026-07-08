@@ -18,7 +18,8 @@ const pasos = [
 
 export default function ComoFunciona() {
   return (
-    <section id="como-funciona" className="bg-cloud">
+    // Fondo blanco: la sección anterior (tipos de chatbot) ya es gris
+    <section id="como-funciona" className="bg-white">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
           Así de fácil
