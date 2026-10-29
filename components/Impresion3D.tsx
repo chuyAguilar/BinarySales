@@ -110,7 +110,7 @@ const productos = [
     codigo: "FZ-01",
     nombre: "Stand QR con tu logo",
     texto:
-      "Base de mostrador con tu logo y un QR a tu WhatsApp, menú, redes o pagos. Que tus clientes te encuentren con un escaneo.",
+      "Base de mostrador con tu logo y un QR a tu chat, menú, redes o pagos. Que tus clientes te encuentren con un escaneo.",
     ilustracion: <StandIlustracion />,
   },
   {

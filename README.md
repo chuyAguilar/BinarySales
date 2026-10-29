@@ -1,6 +1,6 @@
 # FormaZero — Landing page
 
-Landing de una sola página de **FormaZero.mx**: impresión 3D (División 3D) y webs + chatbots de WhatsApp (División Digital), desde Tula de Allende.
+Landing de una sola página de **FormaZero.mx**: impresión 3D (División 3D) y webs + chatbots (División Digital), desde Tula de Allende.
 
 **Stack:** Next.js 15 (App Router) + TypeScript + Tailwind CSS 4. 100% estática, lista para Vercel.
 
@@ -43,7 +43,7 @@ Analítica (Google Analytics / Meta Pixel): hay un hueco comentado al final de [
 ## Estructura
 
 - `app/layout.tsx` — metadatos SEO, Open Graph, JSON-LD LocalBusiness, fuentes.
-- `app/page.tsx` — orden de secciones: Hero → Divisiones → División 3D → División Digital (Problema, Servicios, Tipos de chatbot) → Proceso → Por qué → CTA → Footer.
+- `app/page.tsx` — orden de secciones: Hero → Divisiones → División 3D → División Digital (Problema, Servicios; «Tipos de chatbot» está comentada en `page.tsx`) → Proceso → Por qué → CTA → Footer.
 - `components/` — una sección por archivo; `Logo.tsx` con el isotipo; `icons.tsx`.
 - `lib/site.ts` — contacto: usuario de Instagram, correo, dominio (único lugar a editar).
 - `public/` — isotipo y `og-image.png` (1200×630).

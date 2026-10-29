@@ -28,7 +28,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 const DESCRIPCION =
-  "Impresión 3D en Tula de Allende: stands QR con tu logo, llaveros personalizados, piezas a medida y figuras. Además, webs y chatbots de WhatsApp para tu negocio.";
+  "Impresión 3D en Tula de Allende: stands QR con tu logo, llaveros personalizados, piezas a medida y figuras. Además, webs y chatbots para tu negocio.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "stand QR personalizado",
     "llaveros personalizados 3D",
     "piezas impresas en 3D Hidalgo",
-    "chatbot WhatsApp",
+    "chatbot para negocios",
     "páginas web Tula de Allende",
   ],
   openGraph: {
@@ -115,7 +115,7 @@ const localBusinessJsonLd = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Chatbot de WhatsApp",
+          name: "Chatbot para tu negocio",
         },
         priceSpecification: {
           "@type": "PriceSpecification",

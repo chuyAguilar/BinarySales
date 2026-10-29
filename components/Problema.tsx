@@ -2,7 +2,7 @@ const dolores = [
   {
     titulo: "Se te escapan clientes.",
     texto:
-      "Preguntan por WhatsApp y, si no contestas a tiempo, se van con otro.",
+      "Te escriben por mensaje y, si no contestas a tiempo, se van con otro.",
     icono: (
       // Burbuja de chat con reloj: el cliente que espera
       <svg

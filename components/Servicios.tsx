@@ -3,7 +3,7 @@ const paquetes = [
     nombre: "Presencia",
     tagline: "Que te encuentren.",
     texto:
-      "Página web profesional con tu información, ubicación y botón directo a WhatsApp. Optimizada para que aparezcas en Google.",
+      "Página web profesional con tu información, ubicación y botón directo a tu chat. Optimizada para que aparezcas en Google.",
     precio: "$1,800",
     condicion: "+ mantenimiento.",
     popular: false,
@@ -12,7 +12,7 @@ const paquetes = [
     nombre: "Chatbot",
     tagline: "Que no se te escape ningún cliente.",
     texto:
-      "Un asistente en tu WhatsApp que contesta 24/7, resuelve dudas, agenda citas o pedidos y te avisa de cada interesado.",
+      "Un asistente en tus mensajes que contesta 24/7, resuelve dudas, agenda citas o pedidos y te avisa de cada interesado.",
     precio: "$1,200",
     condicion: "+ mensualidad.",
     popular: true,

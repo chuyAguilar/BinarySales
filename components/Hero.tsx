@@ -152,7 +152,7 @@ export default function Hero() {
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
             Imprimimos en 3D lo que tu negocio necesita: stands QR con tu logo,
             llaveros, piezas a medida y figuras. Y para vender más, también
-            armamos tu web y tu chatbot de WhatsApp. Desde Tula de Allende
+            armamos tu web y tu chatbot. Desde Tula de Allende
             para todo México.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:gap-4">

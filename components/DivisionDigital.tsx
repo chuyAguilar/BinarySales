@@ -2,9 +2,9 @@ import { INSTAGRAM_DM_URL } from "@/lib/site";
 import { InstagramIcon } from "./icons";
 
 /**
- * Mockup de una conversación de WhatsApp atendida por el chatbot,
- * de madrugada: el producto demostrándose a sí mismo. Decorativo.
- * Las burbujas conservan los colores de WhatsApp para que se reconozcan.
+ * Mockup de una conversación atendida por el chatbot, de madrugada:
+ * el producto demostrándose a sí mismo. Decorativo y sin plataforma
+ * concreta, con los colores de la marca.
  */
 function ChatDemo() {
   return (
@@ -21,27 +21,27 @@ function ChatDemo() {
             </p>
           </div>
         </div>
-        <div className="space-y-3 bg-[#efeae2] px-4 py-5">
-          <div className="max-w-[80%] rounded-2xl rounded-tl-sm bg-white px-3.5 py-2.5 shadow-sm">
-            <p className="text-sm text-carbon">
+        <div className="space-y-3 bg-carbon px-4 py-5">
+          <div className="max-w-[80%] rounded-2xl rounded-tl-sm bg-lab px-3.5 py-2.5 ring-1 ring-white/10">
+            <p className="text-sm text-light">
               Hola, ¿siguen abiertos? ¿Hacen envíos?
             </p>
-            <p className="mt-1 text-right text-[10px] text-slate-500">
+            <p className="mt-1 text-right text-[10px] text-muted">
               11:47 p. m.
             </p>
           </div>
-          <div className="ml-auto max-w-[80%] rounded-2xl rounded-tr-sm bg-[#d9fdd3] px-3.5 py-2.5 shadow-sm">
+          <div className="ml-auto max-w-[80%] rounded-2xl rounded-tr-sm bg-cyan px-3.5 py-2.5">
             <p className="text-sm text-carbon">
               ¡Hola! 👋 Sí, hacemos envíos en todo Tula. ¿Te comparto el
               catálogo o te agendo un pedido?
             </p>
-            <p className="mt-1 text-right text-[10px] text-slate-500">
+            <p className="mt-1 text-right text-[10px] text-carbon/70">
               11:47 p. m. ✓✓
             </p>
           </div>
-          <div className="max-w-[80%] rounded-2xl rounded-tl-sm bg-white px-3.5 py-2.5 shadow-sm">
-            <p className="text-sm text-carbon">El catálogo, porfa 🙌</p>
-            <p className="mt-1 text-right text-[10px] text-slate-500">
+          <div className="max-w-[80%] rounded-2xl rounded-tl-sm bg-lab px-3.5 py-2.5 ring-1 ring-white/10">
+            <p className="text-sm text-light">El catálogo, porfa 🙌</p>
+            <p className="mt-1 text-right text-[10px] text-muted">
               11:48 p. m.
             </p>
           </div>
@@ -55,7 +55,7 @@ function ChatDemo() {
   );
 }
 
-/** Portada de la División Digital: webs y chatbots de WhatsApp. */
+/** Portada de la División Digital: webs y chatbots. */
 export default function DivisionDigital() {
   return (
     <section id="division-digital" className="border-t border-white/10 bg-lab">
@@ -67,7 +67,7 @@ export default function DivisionDigital() {
             <span className="text-pink">.</span>
           </h2>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
-            Webs y chatbots de WhatsApp para negocios de Tula y todo México.
+            Webs y chatbots para negocios de Tula y todo México.
             Automatizamos tu atención para que no se te escape ninguna venta.
           </p>
           <a

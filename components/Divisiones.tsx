@@ -51,7 +51,7 @@ export default function Divisiones() {
               DIVISIÓN DIGITAL
             </h3>
             <p className="mt-3 flex-1 leading-relaxed text-slate-700">
-              Páginas web y chatbots de WhatsApp que atienden y venden por ti,
+              Páginas web y chatbots que atienden y venden por ti,
               las 24 horas.
             </p>
             <div className="mt-8">

@@ -5,7 +5,8 @@ import Impresion3D from "@/components/Impresion3D";
 import DivisionDigital from "@/components/DivisionDigital";
 import Problema from "@/components/Problema";
 import Servicios from "@/components/Servicios";
-import TiposChatbot from "@/components/TiposChatbot";
+// Sección oculta por ahora; descomentar aquí y abajo para volver a mostrarla.
+// import TiposChatbot from "@/components/TiposChatbot";
 import ComoFunciona from "@/components/ComoFunciona";
 import PorQue from "@/components/PorQue";
 import CtaFinal from "@/components/CtaFinal";
@@ -23,7 +24,7 @@ export default function Home() {
         <DivisionDigital />
         <Problema />
         <Servicios />
-        <TiposChatbot />
+        {/* <TiposChatbot /> */}
         <ComoFunciona />
         <PorQue />
         <CtaFinal />
