@@ -1,4 +1,5 @@
-import { WHATSAPP_URL, whatsappUrl } from "@/lib/site";
+import { INSTAGRAM_DM_URL } from "@/lib/site";
+import { InstagramIcon } from "./icons";
 
 // Patrón tipo QR 9×9 (1 = módulo lleno). Decorativo, no es un QR real.
 const QR = [
@@ -156,13 +157,12 @@ export default function Hero() {
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:gap-4">
             <a
-              href={whatsappUrl(
-                "Hola FormaZero, quiero cotizar una pieza impresa en 3D",
-              )}
+              href={INSTAGRAM_DM_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="label-mono inline-flex items-center justify-center gap-2 rounded-md bg-pink px-6 py-4 text-sm font-bold text-carbon shadow-lg shadow-pink/20 transition-colors hover:bg-[#ff5c9f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"
             >
+              <InstagramIcon className="h-4 w-4" />
               Cotizar pieza 3D
               <span aria-hidden="true">⚡</span>
             </a>
@@ -177,12 +177,12 @@ export default function Hero() {
           <p className="mt-6 text-sm text-muted">
             ¿Dudas?{" "}
             <a
-              href={WHATSAPP_URL}
+              href={INSTAGRAM_DM_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded font-semibold text-cyan hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"
             >
-              Escríbenos por WhatsApp
+              Escríbenos por Instagram
             </a>
             .
           </p>

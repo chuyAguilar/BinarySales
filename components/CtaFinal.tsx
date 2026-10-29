@@ -1,5 +1,5 @@
-import { WHATSAPP_URL } from "@/lib/site";
-import { WhatsAppIcon } from "./icons";
+import { INSTAGRAM_DM_URL } from "@/lib/site";
+import { InstagramIcon } from "./icons";
 
 export default function CtaFinal() {
   return (
@@ -10,17 +10,17 @@ export default function CtaFinal() {
           ¿LO IMAGINAS? LO FABRICAMOS<span className="text-pink">.</span>
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted">
-          Escríbenos hoy con tu idea, sea una pieza en 3D, tu web o tu chatbot,
+          Mándanos un DM con tu idea, sea una pieza en 3D, tu web o tu chatbot,
           y te respondemos con propuesta y precio.
         </p>
         <a
-          href={WHATSAPP_URL}
+          href={INSTAGRAM_DM_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="label-mono mt-9 inline-flex items-center justify-center gap-3 rounded-md bg-pink px-8 py-4 text-base font-bold text-carbon shadow-lg shadow-pink/20 transition-colors hover:bg-[#ff5c9f] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan"
         >
-          <WhatsAppIcon className="h-6 w-6" />
-          Escríbenos por WhatsApp
+          <InstagramIcon className="h-6 w-6" />
+          Escríbenos por Instagram
         </a>
       </div>
     </section>

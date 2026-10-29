@@ -1,16 +1,12 @@
 // Datos de contacto y constantes del sitio.
 
-// Número de WhatsApp en formato internacional: 52 + 10 dígitos, sin espacios.
-const WHATSAPP_NUMBER = "525661900801";
+// Usuario de Instagram de FormaZero: es el canal de contacto principal.
+export const INSTAGRAM_USER = "formazero.mx";
 
-/** Enlace a WhatsApp con un mensaje prellenado. */
-export function whatsappUrl(mensaje: string) {
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensaje)}`;
-}
+export const INSTAGRAM_URL = `https://www.instagram.com/${INSTAGRAM_USER}`;
 
-export const WHATSAPP_URL = whatsappUrl(
-  "Hola FormaZero, vengo de su página y quiero información",
-);
+// Abre directo el chat (DM). A diferencia de wa.me, no admite mensaje prellenado.
+export const INSTAGRAM_DM_URL = `https://ig.me/m/${INSTAGRAM_USER}`;
 
 // TODO: crear este buzón (correo del dominio o reenvío gratis a tu Gmail)
 export const CONTACT_EMAIL = "hola@formazero.mx";
@@ -18,6 +14,5 @@ export const CONTACT_EMAIL = "hola@formazero.mx";
 // TODO: confirmar el dominio final y conectarlo a Vercel vía DNS
 export const SITE_URL = "https://formazero.mx";
 
-// TODO: redes sociales (Facebook / Instagram)
+// TODO: Facebook (mientras siga en "#", su icono no se muestra en el footer)
 export const FACEBOOK_URL = "#";
-export const INSTAGRAM_URL = "#";

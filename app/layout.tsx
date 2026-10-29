@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Archivo_Black, JetBrains_Mono, Montserrat } from "next/font/google";
-import { CONTACT_EMAIL, SITE_URL, WHATSAPP_URL } from "@/lib/site";
+import {
+  CONTACT_EMAIL,
+  INSTAGRAM_DM_URL,
+  INSTAGRAM_URL,
+  SITE_URL,
+} from "@/lib/site";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -66,6 +71,7 @@ const localBusinessJsonLd = {
   description: DESCRIPCION,
   url: SITE_URL,
   email: CONTACT_EMAIL,
+  sameAs: [INSTAGRAM_URL],
   image: `${SITE_URL}/og-image.png`,
   address: {
     "@type": "PostalAddress",
@@ -77,7 +83,7 @@ const localBusinessJsonLd = {
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
-    url: WHATSAPP_URL,
+    url: INSTAGRAM_DM_URL,
     availableLanguage: "es",
   },
   hasOfferCatalog: {

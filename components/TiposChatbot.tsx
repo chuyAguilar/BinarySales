@@ -1,4 +1,4 @@
-import { WHATSAPP_URL } from "@/lib/site";
+import { INSTAGRAM_DM_URL } from "@/lib/site";
 
 /**
  * Mini-mockups de conversación con el mismo lenguaje visual del hero:
@@ -115,7 +115,7 @@ export default function TiposChatbot() {
         <p className="mt-10 text-center text-muted">
           ¿No sabes cuál le conviene a tu negocio?{" "}
           <a
-            href={WHATSAPP_URL}
+            href={INSTAGRAM_DM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded font-semibold text-cyan hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"

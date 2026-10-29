@@ -1,4 +1,5 @@
-import { whatsappUrl } from "@/lib/site";
+import { INSTAGRAM_DM_URL } from "@/lib/site";
+import { InstagramIcon } from "./icons";
 
 /* Ilustraciones decorativas de cada producto, en la paleta de la marca. */
 
@@ -110,7 +111,6 @@ const productos = [
     nombre: "Stand QR con tu logo",
     texto:
       "Base de mostrador con tu logo y un QR a tu WhatsApp, menú, redes o pagos. Que tus clientes te encuentren con un escaneo.",
-    mensaje: "Hola FormaZero, quiero cotizar un Stand QR con mi logo",
     ilustracion: <StandIlustracion />,
   },
   {
@@ -118,7 +118,6 @@ const productos = [
     nombre: "Llaveros personalizados",
     texto:
       "Con el logo de tu negocio, en varios colores. Ideales para regalar a tus clientes, eventos o mercancía de tu marca.",
-    mensaje: "Hola FormaZero, quiero cotizar llaveros personalizados",
     ilustracion: <LlaveroIlustracion />,
   },
   {
@@ -126,7 +125,6 @@ const productos = [
     nombre: "Piezas a medida",
     texto:
       "Refacciones, soportes, prototipos o lo que imagines. Nos traes la idea, la medida o el archivo y lo fabricamos.",
-    mensaje: "Hola FormaZero, quiero cotizar una pieza a medida en 3D",
     ilustracion: <PiezaIlustracion />,
   },
   {
@@ -134,7 +132,6 @@ const productos = [
     nombre: "Figuras y coleccionables",
     texto:
       "Personajes, figuras decorativas y regalos únicos con acabado detallado. Para tu colección o para sorprender a alguien.",
-    mensaje: "Hola FormaZero, quiero cotizar una figura impresa en 3D",
     ilustracion: <FiguraIlustracion />,
   },
 ];
@@ -149,7 +146,7 @@ export default function Impresion3D() {
         </h2>
         <p className="mt-4 max-w-2xl leading-relaxed text-muted">
           Impresión 3D multicolor hecha en Tula de Allende. Cada pieza se cotiza
-          a tu medida: escríbenos con tu idea y te respondemos con precio y
+          a tu medida: mándanos un DM con tu idea y te respondemos con precio y
           tiempo de entrega.
         </p>
 
@@ -172,13 +169,18 @@ export default function Impresion3D() {
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
                   {producto.texto}
                 </p>
+                <p className="label-mono mt-5 text-muted">
+                  Menciona <span className="text-cyan">{producto.codigo}</span>{" "}
+                  en tu mensaje
+                </p>
                 <a
-                  href={whatsappUrl(producto.mensaje)}
+                  href={INSTAGRAM_DM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Cotizar ${producto.nombre} por WhatsApp`}
-                  className="label-mono mt-6 inline-flex items-center justify-center gap-2 rounded-md bg-pink px-4 py-3 font-bold text-carbon transition-colors hover:bg-[#ff5c9f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"
+                  aria-label={`Cotizar ${producto.nombre} por Instagram`}
+                  className="label-mono mt-3 inline-flex items-center justify-center gap-2 rounded-md bg-pink px-4 py-3 font-bold text-carbon transition-colors hover:bg-[#ff5c9f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"
                 >
+                  <InstagramIcon className="h-4 w-4" />
                   Cotizar <span aria-hidden="true">⚡</span>
                 </a>
               </div>

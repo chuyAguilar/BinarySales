@@ -1,5 +1,5 @@
-import { whatsappUrl } from "@/lib/site";
-import { WhatsAppIcon } from "./icons";
+import { INSTAGRAM_DM_URL } from "@/lib/site";
+import { InstagramIcon } from "./icons";
 
 /**
  * Mockup de una conversación de WhatsApp atendida por el chatbot,
@@ -71,15 +71,13 @@ export default function DivisionDigital() {
             Automatizamos tu atención para que no se te escape ninguna venta.
           </p>
           <a
-            href={whatsappUrl(
-              "Hola FormaZero, quiero información sobre webs y chatbots",
-            )}
+            href={INSTAGRAM_DM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="label-mono mt-9 inline-flex items-center justify-center gap-2.5 rounded-md bg-pink px-6 py-4 text-sm font-bold text-carbon transition-colors hover:bg-[#ff5c9f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"
           >
-            <WhatsAppIcon className="h-5 w-5" />
-            Pide tu demo por WhatsApp
+            <InstagramIcon className="h-5 w-5" />
+            Pide tu demo por Instagram
           </a>
         </div>
         <ChatDemo />

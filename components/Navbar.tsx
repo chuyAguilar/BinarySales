@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { WHATSAPP_URL } from "@/lib/site";
-import { WhatsAppIcon } from "./icons";
+import { INSTAGRAM_DM_URL } from "@/lib/site";
+import { InstagramIcon } from "./icons";
 import { Logo } from "./Logo";
 
 const links = [
@@ -40,12 +40,12 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href={WHATSAPP_URL}
+            href={INSTAGRAM_DM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="label-mono inline-flex items-center gap-2 rounded-md bg-pink px-5 py-2.5 font-bold text-carbon transition-colors hover:bg-[#ff5c9f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"
           >
-            <WhatsAppIcon className="h-4 w-4" />
+            <InstagramIcon className="h-4 w-4" />
             Cotizar
           </a>
         </div>
@@ -93,14 +93,14 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href={WHATSAPP_URL}
+              href={INSTAGRAM_DM_URL}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="label-mono mt-3 inline-flex items-center justify-center gap-2 rounded-md bg-pink px-5 py-3.5 text-sm font-bold text-carbon hover:bg-[#ff5c9f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"
             >
-              <WhatsAppIcon className="h-5 w-5" />
-              Cotizar por WhatsApp
+              <InstagramIcon className="h-5 w-5" />
+              Cotizar por Instagram
             </a>
           </div>
         </div>

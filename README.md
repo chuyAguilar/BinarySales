@@ -27,10 +27,10 @@ Todo está centralizado en [`lib/site.ts`](lib/site.ts):
 
 - [ ] `SITE_URL` — confirmar el dominio final (hoy `https://formazero.mx`; se usa en metadatos y JSON-LD).
 - [ ] `CONTACT_EMAIL` — crear el buzón `hola@formazero.mx` o cambiarlo.
-- [ ] `FACEBOOK_URL` / `INSTAGRAM_URL` — mientras sigan en `"#"`, los iconos del footer no se muestran.
+- [ ] `FACEBOOK_URL` — mientras siga en `"#"`, su icono del footer no se muestra.
 - [ ] Fotos reales de piezas impresas para la División 3D (hoy son ilustraciones SVG).
 
-Los botones «Cotizar» de cada producto abren WhatsApp con un mensaje prellenado distinto (`whatsappUrl(mensaje)`).
+**Contacto:** todos los botones abren el DM de Instagram de [@formazero.mx](https://www.instagram.com/formazero.mx) (`INSTAGRAM_DM_URL` = `ig.me/m/formazero.mx`). Instagram no permite mensaje prellenado, así que cada producto 3D muestra su código (FZ-01…FZ-04) para que el cliente lo mencione; el bot de DMs (`../automatizacion`) lo detecta.
 
 Analítica (Google Analytics / Meta Pixel): hay un hueco comentado al final de [`app/layout.tsx`](app/layout.tsx).
 
@@ -45,6 +45,6 @@ Analítica (Google Analytics / Meta Pixel): hay un hueco comentado al final de [
 - `app/layout.tsx` — metadatos SEO, Open Graph, JSON-LD LocalBusiness, fuentes.
 - `app/page.tsx` — orden de secciones: Hero → Divisiones → División 3D → División Digital (Problema, Servicios, Tipos de chatbot) → Proceso → Por qué → CTA → Footer.
 - `components/` — una sección por archivo; `Logo.tsx` con el isotipo; `icons.tsx`.
-- `lib/site.ts` — contacto y helper de WhatsApp (único lugar a editar).
+- `lib/site.ts` — contacto: usuario de Instagram, correo, dominio (único lugar a editar).
 - `public/` — isotipo y `og-image.png` (1200×630).
 - `marca/` — archivos fuente de la marca.
