@@ -1,15 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  /* Tokens de marca (Brief, sección 2) */
-  --color-navy: #0b1f3a;
-  --color-accent: #2563eb;
-  --color-cta: #f59e0b;
-  --color-muted: #64748b;
-  --color-cloud: #f1f5f9;
+  /* Tokens de marca FormaZero (marca/formazero-ficha-tecnica.jpeg) */
+  --color-carbon: #0d0e12; /* Carbon Zero — fondo */
+  --color-lab: #161820; /* Gris Lab — superficies */
+  --color-cyan: #00e5ff; /* Cyber Cyan */
+  --color-pink: #ff2a85; /* Cyber Pink — CTA principal */
+  --color-light: #f1f3f6; /* Lab Light */
+  /* Texto secundario: 7:1 sobre carbon, AA también sobre lab */
+  --color-muted: #a3a9b8;
 
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", sans-serif;
+  --font-display: var(--font-archivo-black), var(--font-montserrat), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, "Cascadia Code",
+    monospace;
 }
 
 html {
@@ -25,7 +30,23 @@ html {
 }
 
 body {
-  background-color: var(--color-white);
-  color: var(--color-navy);
+  background-color: var(--color-carbon);
+  color: var(--color-light);
   -webkit-font-smoothing: antialiased;
+}
+
+/* Retícula de laboratorio: líneas finas como la cama de impresión */
+@utility grid-bg {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Etiquetas tipo código: [FZ // 3D-LAB] */
+@utility label-mono {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }

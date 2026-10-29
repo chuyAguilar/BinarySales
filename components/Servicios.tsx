@@ -30,34 +30,35 @@ const paquetes = [
 
 export default function Servicios() {
   return (
-    <section id="servicios" className="bg-white">
+    <section id="servicios" className="bg-lab">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-          Lo que hacemos por ti
+        <p className="label-mono text-pink">[FZ // DIGITAL • PAQUETES]</p>
+        <h2 className="mt-3 font-display text-3xl text-light sm:text-4xl">
+          LO QUE HACEMOS POR TI
         </h2>
         <ul className="mt-12 grid gap-6 md:grid-cols-3">
           {paquetes.map((paquete) => (
             <li
               key={paquete.nombre}
-              className={`relative flex flex-col rounded-2xl bg-white p-7 ${
+              className={`relative flex flex-col rounded-md bg-carbon p-7 ${
                 paquete.popular
-                  ? "shadow-lg ring-2 ring-cta"
-                  : "shadow-sm ring-1 ring-slate-900/5"
+                  ? "shadow-lg shadow-pink/10 ring-2 ring-pink"
+                  : "ring-1 ring-white/10"
               }`}
             >
               {paquete.popular && (
-                <p className="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-cta px-4 py-1 text-xs font-semibold text-navy shadow-sm">
-                  ⭐ Más popular
+                <p className="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap label-mono rounded-md bg-pink px-4 py-1 font-bold text-carbon">
+                  Más popular
                 </p>
               )}
-              <h3 className="text-xl font-bold text-navy">{paquete.nombre}</h3>
-              <p className="mt-1 font-medium text-accent">{paquete.tagline}</p>
+              <h3 className="font-display text-xl text-light">{paquete.nombre}</h3>
+              <p className="mt-1 font-semibold text-cyan">{paquete.tagline}</p>
               <p className="mt-4 flex-1 leading-relaxed text-muted">
                 {paquete.texto}
               </p>
-              <p className="mt-6 border-t border-slate-100 pt-5 text-muted">
+              <p className="mt-6 border-t border-white/10 pt-5 text-muted">
                 Desde{" "}
-                <span className="text-3xl font-bold tracking-tight text-navy">
+                <span className="font-display text-3xl text-light">
                   {paquete.precio}
                 </span>{" "}
                 {paquete.condicion}

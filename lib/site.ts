@@ -1,15 +1,22 @@
 // Datos de contacto y constantes del sitio.
-// TODO: reemplaza los placeholders antes de publicar (ver Brief, sección 6).
 
 // Número de WhatsApp en formato internacional: 52 + 10 dígitos, sin espacios.
-export const WHATSAPP_URL =
-  "https://wa.me/525661900801?text=Hola%2C%20vengo%20de%20su%20p%C3%A1gina%20y%20quiero%20informaci%C3%B3n";
+const WHATSAPP_NUMBER = "525661900801";
 
-// TODO: crear este buzón (correo de Akky o reenvío gratis a tu Gmail)
-export const CONTACT_EMAIL = "hola@binarysales.com.mx";
+/** Enlace a WhatsApp con un mensaje prellenado. */
+export function whatsappUrl(mensaje: string) {
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensaje)}`;
+}
 
-// Dominio comprado en Akky (falta conectarlo a Vercel vía DNS)
-export const SITE_URL = "https://binarysales.com.mx";
+export const WHATSAPP_URL = whatsappUrl(
+  "Hola FormaZero, vengo de su página y quiero información",
+);
+
+// TODO: crear este buzón (correo del dominio o reenvío gratis a tu Gmail)
+export const CONTACT_EMAIL = "hola@formazero.mx";
+
+// TODO: confirmar el dominio final y conectarlo a Vercel vía DNS
+export const SITE_URL = "https://formazero.mx";
 
 // TODO: redes sociales (Facebook / Instagram)
 export const FACEBOOK_URL = "#";

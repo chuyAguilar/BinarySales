@@ -1,42 +1,46 @@
 const pasos = [
   {
-    numero: "1",
+    numero: "01",
     titulo: "Platicamos.",
-    texto: "Nos cuentas de tu negocio y qué necesitas. Sin compromiso.",
+    texto:
+      "Nos cuentas tu idea: una pieza, un llavero, tu web o tu chatbot. Sin compromiso.",
   },
   {
-    numero: "2",
-    titulo: "Lo montamos.",
-    texto: "Diseñamos tu web y/o chatbot y lo dejamos funcionando.",
+    numero: "02",
+    titulo: "Lo diseñamos.",
+    texto:
+      "Modelamos la pieza en 3D o armamos tu web y tu chatbot, y te lo enseñamos antes.",
   },
   {
-    numero: "3",
-    titulo: "Recibes más clientes.",
-    texto: "Tu negocio atiende y vende, incluso mientras duermes.",
+    numero: "03",
+    titulo: "Lo fabricamos o lo lanzamos.",
+    texto:
+      "Imprimimos y te entregamos tu pieza, o dejamos tu negocio vendiendo en línea.",
   },
 ];
 
 export default function ComoFunciona() {
   return (
-    // Fondo blanco: la sección anterior (tipos de chatbot) ya es gris
-    <section id="como-funciona" className="bg-white">
+    <section id="proceso" className="grid-bg border-t border-white/10 bg-carbon">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-          Así de fácil
+        <p className="label-mono text-cyan">[FZ // PROCESO]</p>
+        <h2 className="mt-3 font-display text-3xl text-light sm:text-4xl">
+          ASÍ DE FÁCIL
         </h2>
         <ol className="mt-10 grid gap-6 md:grid-cols-3">
           {pasos.map((paso) => (
             <li
               key={paso.numero}
-              className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-900/5"
+              className="rounded-md bg-lab p-6 ring-1 ring-white/10"
             >
               <p
                 aria-hidden="true"
-                className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-lg font-bold text-white"
+                className="font-mono text-3xl font-bold text-cyan"
               >
                 {paso.numero}
+                <span className="text-pink">.</span>
               </p>
-              <h3 className="mt-5 text-lg font-bold text-navy">
+              <h3 className="mt-4 text-lg font-bold text-light">
                 {paso.titulo}
               </h3>
               <p className="mt-2 leading-relaxed text-muted">{paso.texto}</p>

@@ -1,10 +1,10 @@
-import Image from "next/image";
 import {
   CONTACT_EMAIL,
   FACEBOOK_URL,
   INSTAGRAM_URL,
   WHATSAPP_URL,
 } from "@/lib/site";
+import { Logo } from "./Logo";
 
 const redes = [
   {
@@ -39,20 +39,15 @@ const redes = [
 
 export default function Footer() {
   return (
-    <footer id="contacto" className="border-t border-slate-200 bg-white">
+    <footer id="contacto" className="border-t border-white/10 bg-carbon">
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div>
-            <Image
-              src="/binarysales-logo-nav.svg"
-              alt="BinarySales"
-              width={515}
-              height={150}
-              className="h-10 w-auto"
-            />
-            <p className="mt-3 text-muted">
-              Tecnología que te trae más clientes.
+            <Logo />
+            <p className="mt-4 text-muted">
+              Del código digital a la realidad física.
             </p>
+            <p className="label-mono mt-2 text-cyan">[FZ // 3D-LAB • DIGITAL]</p>
           </div>
 
           <div className="md:text-right">
@@ -61,14 +56,14 @@ export default function Footer() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded font-medium text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                className="rounded font-medium text-cyan hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"
               >
                 WhatsApp
               </a>{" "}
               ·{" "}
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
-                className="rounded font-medium text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                className="rounded font-medium text-cyan hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"
               >
                 Correo
               </a>{" "}
@@ -84,8 +79,8 @@ export default function Footer() {
                     href={red.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`${red.nombre} de BinarySales`}
-                    className="rounded-lg text-muted transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                    aria-label={`${red.nombre} de FormaZero`}
+                    className="rounded-md text-muted transition-colors hover:text-cyan focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"
                   >
                     {red.icono}
                   </a>
@@ -95,8 +90,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-slate-100 pt-6">
-          <p className="text-sm text-muted">© 2026 BinarySales</p>
+        <div className="mt-10 border-t border-white/10 pt-6">
+          <p className="label-mono text-muted">© 2026 FormaZero.mx</p>
         </div>
       </div>
     </footer>

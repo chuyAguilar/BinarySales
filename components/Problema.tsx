@@ -67,21 +67,21 @@ const dolores = [
 
 export default function Problema() {
   return (
-    <section className="bg-cloud">
+    <section className="bg-carbon">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-          ¿Te suena familiar?
+        <h2 className="font-display text-3xl text-light sm:text-4xl">
+          ¿TE SUENA FAMILIAR?
         </h2>
         <ul className="mt-10 grid gap-6 md:grid-cols-3">
           {dolores.map((dolor) => (
             <li
               key={dolor.titulo}
-              className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-900/5"
+              className="rounded-md bg-lab p-6 ring-1 ring-white/10"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-accent">
+              <div className="flex h-12 w-12 items-center justify-center rounded-md bg-pink/10 text-pink ring-1 ring-pink/30">
                 {dolor.icono}
               </div>
-              <h3 className="mt-5 text-lg font-bold text-navy">
+              <h3 className="mt-5 text-lg font-bold text-light">
                 {dolor.titulo}
               </h3>
               <p className="mt-2 leading-relaxed text-muted">{dolor.texto}</p>

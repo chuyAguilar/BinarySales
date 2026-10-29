@@ -51,7 +51,7 @@ const tipos: { nombre: string; descripcion: string; chat: Pieza[] }[] = [
 
 function Chat({ piezas }: { piezas: Pieza[] }) {
   return (
-    <div aria-hidden="true" className="space-y-2.5 border-b border-slate-100 bg-cloud p-5">
+    <div aria-hidden="true" className="space-y-2.5 border-b border-white/10 bg-[#efeae2] p-5">
       {piezas.map((pieza, i) => {
         if (pieza.tipo === "botones") {
           return (
@@ -59,7 +59,7 @@ function Chat({ piezas }: { piezas: Pieza[] }) {
               {pieza.opciones.map((opcion) => (
                 <p
                   key={opcion}
-                  className="rounded-xl bg-white px-3 py-1.5 text-center text-xs font-medium text-navy shadow-sm ring-1 ring-slate-200"
+                  className="rounded-xl bg-white px-3 py-1.5 text-center text-xs font-medium text-carbon shadow-sm ring-1 ring-slate-200"
                 >
                   {opcion}
                 </p>
@@ -71,7 +71,7 @@ function Chat({ piezas }: { piezas: Pieza[] }) {
         return (
           <p
             key={i}
-            className={`max-w-[85%] rounded-2xl px-3.5 py-2.5 text-sm text-navy shadow-sm ${
+            className={`max-w-[85%] rounded-2xl px-3.5 py-2.5 text-sm text-carbon shadow-sm ${
               esBot
                 ? "ml-auto rounded-tr-sm bg-[#d9fdd3]"
                 : "rounded-tl-sm bg-white"
@@ -87,12 +87,12 @@ function Chat({ piezas }: { piezas: Pieza[] }) {
 
 export default function TiposChatbot() {
   return (
-    <section id="tipos-de-chatbot" className="bg-cloud">
+    <section id="tipos-de-chatbot" className="bg-carbon">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">
-          Tipos de chatbot para tu negocio
+        <h2 className="font-display text-3xl text-light sm:text-4xl">
+          TIPOS DE CHATBOT PARA TU NEGOCIO
         </h2>
-        <p className="mt-4 max-w-2xl leading-relaxed text-slate-600">
+        <p className="mt-4 max-w-2xl leading-relaxed text-muted">
           No todos los negocios necesitan el mismo asistente. Estos son los
           tipos de chatbot que podemos armar para ti:
         </p>
@@ -100,11 +100,11 @@ export default function TiposChatbot() {
           {tipos.map((tipo) => (
             <li
               key={tipo.nombre}
-              className="flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-900/5"
+              className="flex flex-col overflow-hidden rounded-md border-b-4 border-pink bg-lab ring-1 ring-white/10"
             >
               <Chat piezas={tipo.chat} />
               <div className="flex-1 p-6">
-                <h3 className="text-lg font-bold text-navy">{tipo.nombre}</h3>
+                <h3 className="text-lg font-bold text-light">{tipo.nombre}</h3>
                 <p className="mt-2 leading-relaxed text-muted">
                   {tipo.descripcion}
                 </p>
@@ -112,13 +112,13 @@ export default function TiposChatbot() {
             </li>
           ))}
         </ul>
-        <p className="mt-10 text-center text-slate-600">
+        <p className="mt-10 text-center text-muted">
           ¿No sabes cuál le conviene a tu negocio?{" "}
           <a
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded font-semibold text-accent hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            className="rounded font-semibold text-cyan hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan"
           >
             Escríbenos y te ayudamos a elegir
           </a>
